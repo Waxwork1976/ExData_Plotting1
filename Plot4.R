@@ -12,7 +12,6 @@ energy$dateTime <- ymd_hms(paste(energy$Date, energy$Time))
 
 png("plot4.png", width=480, height=480)
 
-energy$dateTime <- ymd_hms(paste(energy$Date, energy$Time))
 
 par(mfrow=c(2,2))
 # plot 1
