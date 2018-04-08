@@ -1,6 +1,6 @@
 library(lubridate)
 library(data.table)
-
+setwd("C:\\Users\\colin\\OneDrive\\Documents\\Data Analysis Course\\Exploratory data - peer week 1")
 energy = fread("household_power_consumption.txt", na.strings = "?")
 
 
@@ -30,7 +30,7 @@ legend("topright", col = c("black", "red", "blue"),
        lty = c(1,1))
 
 # plot 4
-plot(energy$dateTime, energy$Global_active_power, type="l",xlab="datetime", ylab="Global_reactive_power")
+plot(energy$dateTime, energy$Global_reactive_power, type="l",xlab="datetime", ylab="Global_reactive_power")
 
 
 dev.off()     
